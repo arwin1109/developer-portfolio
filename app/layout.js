@@ -10,9 +10,12 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Abu Said - Software Developer",
+  title: "Portfolio of Aravind Balineni - Automation Technical Lead",
   description:
-    "This is the portfolio of Abu Said. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "This is the portfolio of Aravind Balineni. I am an Automation Technical Lead with extensive experience in RPA implementation and Python integration. I have a proven track record of innovation, solution consulting, and transforming traditional SDLC processes to Agile. I excel in customer engagement and people management, building and guiding high-performing teams.",
+  icons: {
+    icon: 'https://media.licdn.com/dms/image/v2/C5103AQG8N8uUA5X0lg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1579090848363?e=2147483647&v=beta&t=q6MmMak5V9jW-ObAO24Q6biONtuzMzfRPoEaFP6KU-U',
+  },
 };
 
 export default function RootLayout({ children }) {

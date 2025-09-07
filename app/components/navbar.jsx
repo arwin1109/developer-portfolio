@@ -1,5 +1,6 @@
 // @flow strict
 import Link from "next/link";
+import Image from "next/image";
 
 
 function Navbar() {
@@ -9,8 +10,17 @@ function Navbar() {
         <div className="flex flex-shrink-0 items-center">
           <Link
             href="/"
-            className=" text-[#16f2b3] text-3xl font-bold">
-            ABU SAID
+            className="flex items-center gap-3 text-[#16f2b3] text-3xl font-bold"
+            suppressHydrationWarning>
+            <Image
+              src="/logo-ab.png"
+              alt="AB Logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+              suppressHydrationWarning
+            />
+            AB
           </Link>
         </div>
 

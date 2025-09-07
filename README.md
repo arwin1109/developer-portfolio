@@ -18,7 +18,7 @@
 
 ![](./public/image/screen.png)
 
-## View live preview [here](https://abusaid.netlify.app/).
+## View live preview [here](https://aravind-balineni.netlify.app/).
 
 ---
 
@@ -151,21 +151,21 @@ Eg:
 
 ```javascript
 export const personalData = {
-  name: "ABU SAID",
+  name: "Aravind Balineni",
   profile: "/profile.png",
-  designation: "Full-Stack Software Developer",
-  description: "My name is ABU SAID....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
-  github: "https://github.com/said7388",
-  facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "...",
+  designation: "Automation Technical Lead",
+  description: "Aravind Balineni is an Automation Technical Lead with extensive experience in RPA implementation and Python integration. He has a proven track record of innovation, solution consulting, and transforming traditional SDLC processes to Agile. Aravind excels in customer engagement and people management, building and guiding high-performing teams.",
+  email: "aravindbalineni123@gmail.com",
+  phone: "9963779790",
+  address: "Hyderabad",
+  github: "https://github.com/arwin1109",
+  facebook: "",
+  linkedIn: "https://www.linkedin.com/in/aravindbalineni/",
+  twitter: "",
+  stackOverflow: "",
+  leetcode: "",
+  devUsername: "",
+  resume: "documents/Aravind Balineni Resume.pdf",
 };
 ```
 

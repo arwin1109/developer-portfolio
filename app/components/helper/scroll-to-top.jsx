@@ -8,16 +8,23 @@ const DEFAULT_BTN_CLS =
 const SCROLL_THRESHOLD = 50;
 
 const ScrollToTop = () => {
-  const [btnCls, setBtnCls] = useState(DEFAULT_BTN_CLS);
+  const [btnCls, setBtnCls] = useState(DEFAULT_BTN_CLS + " hidden");
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+
     const handleScroll = () => {
       if (window.scrollY > SCROLL_THRESHOLD) {
-        setBtnCls(DEFAULT_BTN_CLS.replace(" hidden", ""));
+        setBtnCls(DEFAULT_BTN_CLS);
       } else {
         setBtnCls(DEFAULT_BTN_CLS + " hidden");
       }
     };
+
+    // Check initial scroll position after mount
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll, { passive: true });
@@ -25,6 +32,11 @@ const ScrollToTop = () => {
   }, []);
 
   const onClickBtn = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+  // Don't render until mounted to prevent hydration mismatch
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <button className={btnCls} onClick={onClickBtn}>

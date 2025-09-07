@@ -81,8 +81,16 @@ import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg'
 import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
-import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
+import fastapi from '../app/assets/svg/skills/fastapi.svg';
+import salesforce from '../app/assets/svg/skills/salesforce.svg';
+import jira from '../app/assets/svg/skills/jira.svg';
+import kibana from '../app/assets/svg/skills/kibana.svg';
+import uipath from '../app/assets/svg/skills/uipath.svg';
+import jenkins from '../app/assets/svg/skills/jenkins.svg';
+import flask from '../app/assets/svg/skills/flask.svg';
+import vbnet from '../app/assets/svg/skills/vbnet.svg';
+import sql from '../app/assets/svg/skills/sql.svg';
+import gappsscript from '../app/assets/svg/skills/g-apps-script.svg';
 
 
 export const skillsImage = (skill) => {
@@ -203,6 +211,7 @@ export const skillsImage = (skill) => {
     case 'selenium':
       return selenium;
     case 'strapi':
+    case 'strapi':
       return strapi;
     case 'tensorflow':
       return tensorflow;
@@ -254,7 +263,55 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'vb.net':
+      return vbnet;
+    case 'sql':
+      return sql;
+    case 'g-apps script':
+      return gappsscript;
+    case 'uipath':
+      return uipath;
+    case 'altova xml spy':
+      return null; // No specific icon found, returning null
+    case 'blue prism':
+      return null; // No specific icon found, returning null
+    case 'salesforce':
+      return salesforce;
+    case 'jira':
+      return jira;
+    case 'kibana':
+      return kibana;
+    case 'amazon s3':
+      return aws; // AWS icon can be used for Amazon S3
+    case 'google dialog flow':
+      return null; // No specific icon found, returning null
+    case 'flask':
+      return flask;
+    case 'ffmpeg':
+      return null; // No specific icon found, returning null
+    case 'hangout chat':
+      return null; // No specific icon found, returning null
+    case 'db':
+      return null; // No specific icon found, returning null
+    case 'ftp':
+      return null; // No specific icon found, returning null
+    case 'pgp encryption':
+      return null; // No specific icon found, returning null
+    case 'rest apis':
+      return null; // No specific icon found, returning null
+    case 'abbyy fine reader':
+      return null; // No specific icon found, returning null
+    case 'microsoft ocr':
+      return null; // No specific icon found, returning null
+    case 'tessaract ocr':
+      return null; // No specific icon found, returning null
+    case 'abbyy cloud ocr':
+      return null; // No specific icon found, returning null
+    case 'agile':
+      return null; // No specific icon found, returning null
+    case 'jenkins':
+      return jenkins;
     default:
-      break;
+      return null;
   }
 }
